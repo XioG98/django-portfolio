@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About me</title>
+	<html>
+
+	<head>
+		<title>About me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'portfolio/assets/css/main.css' %}" />
+	</head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header" class="container">
+
+				<!-- Logo -->
+				<h1 id="logo"><a href="{% url 'home' %}">Home</a></h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="{% url 'projects' %}">Projects</a></li>
+						<li class="break"><a href="{% url 'contact' %}">Contact me</a></li>
+						<li><a href="{% url 'aboutme' %}">About me</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<!-- Hero -->
+			<section id="hero" class="container">
+				<header>
+					<h2>XIOMARA GARCIA</h2>
+				</header>
+				<p>Adso 2873441 </p>
+
+			</section>
+
+		</div>
+
+		<!-- Main -->
+		<div class="wrapper">
+			<div class="container" id="main">
+
+				<!-- Content -->
+				<article id="content">
+					<header>
+						<h2>Sobre mí...</h2>
+						<p>No hay mucho qué decir sobre una persona de 27 años.</p>
+					</header>
+					
+				</article>
+				
+				<div class="row features">
+					<section class="col-6 col-12-narrower feature">
+						<div class="image-center">
+							<img class="image " src="{% static 'portfolio/images/pic13.jpg' %}" alt=""  height="400"/>
+						</div>
+	
+						</section>
+						<section class="col-6 col-12-narrower feature">
+							
+							
+							<p>Por supuesto no soy la de la imagen. Es una imagen generada con la IA, pero está bien bonita.
+							</p>
+							<p>Estudio en el SENA, en la ficha ADSO desde el 2024. Estoy próxima a finalizar. Es mi segundo
+								estudio, el primero fue diseño de moda, y aunque fue divertido, trabajar en el no lo fue tanto y
+								por eso lo dejé.
+							</p>
+							<p>Vivo con mi pareja, y tenemos 3 gatos, con expectativa de muchos mas.</p>
+							<p>Nuestros pasatiempos van desde hablar de programación, anime, gatos, cocinar, caminar, ir a
+								pueblos, visitar familia.</p>
+
+					</section>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="{% static '/portfolio/assets/js/jquery.min.js' %}"></script>
+	<script src="{% static '/portfolio/assets/js/jquery.dropotron.min.js' %}"></script>
+	<script src="{% static '/portfolio/assets/js/browser.min.js' %}"></script>
+	<script src="{% static '/portfolio/assets/js/breakpoints.min.js' %}"></script>
+	<script src="{% static '/portfolio/assets/js/util.js' %}"></script>
+	<script src="{% static '/portfolio/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+<html>
+	<head>
+		<title>My Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'portfolio/assets/css/main.css' %}" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="{% url 'home' %}">Home</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="{% url 'projects' %}">Projects</a></li>
+									<li class="break"><a href="{% url 'contact' %}">Contact me</a></li>
+									<li><a href="{% url 'aboutme' %}">About me</a></li>
+								</ul>
+							</nav>
+
+					</div>
+
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2>PROJECTS</h2>
+							</header>
+							<p>Adso 2873441 </p>
+						
+						</section>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Los proyectos</h2>
+									<p>Esto es simplemente algo relativo,  los proyectos de la vida.</p>
+								</header>
+								
+								<p>Puedo comenzar diciendo que en los proyectos de la vida, he logrado estudiar, tener pareja, vivir junto a él, tener una buena convivencia. Luego están los hijos, los cuales serían los gatos, claro.</p>
+								<p>Pero si estamos hablando de un concepto de proyecto mucho más técnico y relacionado a desarrollo de software, puedo mencionar que mi proyecto más longevo ha sido Work Hub, que pasó por varias etapas, y por distintos integrantes. Sin embargo, lo dejé en manos de mis compañeros y ahora me encuentro bajo un nuevo proyecto, con nuevos integrantes, llamado Akalia.</p>
+								
+							</article>
+
+						<div class="row features">
+							<section class="col-6 col-12-narrower feature" >
+								<div class="image-wrapper ">
+									<a href="#" class="image "><img src="{% static 'portfolio/images/logoAkalia.png' %}" alt="" /></a>
+								</div>
+								<header>
+									<h3>AKALIA</h3>
+								</header>
+								<p>Es un proyecto el cual tiene como objetivo servir a los artesanos colombianos. Es un espacio para que dichos artesanos expongan sus productos.</p>
+								
+							</section>
+							<section class="col-6 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image "><img src="{% static 'portfolio/images/logoWorkHub.png' %}" alt="" /></a>
+								</div>
+								<header>
+									<h3>WORK HUB</h3>
+								</header>
+								<p>Por su lado, el proyecto Work Hub buscaba conectar empleadores y trabajadores, para concretar un servicio a término temporal. </p>
+								
+							</section>
+							
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static '/portfolio/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static '/portfolio/assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static '/portfolio/assets/js/browser.min.js' %}"></script>
+			<script src="{% static '/portfolio/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static '/portfolio/assets/js/util.js' %}"></script>
+			<script src="{% static '/portfolio/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
